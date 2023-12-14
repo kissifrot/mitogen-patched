@@ -43,7 +43,7 @@ jobs:
 
 - job: Linux
   pool:
-    # https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2004-Readme.md
+    # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2004-Readme.md
     vmImage: ubuntu-20.04
   steps:
   - template: azure-pipelines-steps.yml
@@ -95,6 +95,9 @@ jobs:
       Mito_36_ubuntu2004:
         python.version: '3.6'
         tox.env: py36-mode_mitogen-distro_ubuntu2004
+      Mito_36_ubuntu2204:
+        python.version: '3.6'
+        tox.env: py36-mode_mitogen-distro_ubuntu2204
 
       Mito_311_centos6:
         python.version: '3.11'
@@ -123,6 +126,9 @@ jobs:
       Mito_311_ubuntu2004:
         python.version: '3.11'
         tox.env: py311-mode_mitogen-distro_ubuntu2004
+      Mito_311_ubuntu2204:
+        python.version: '3.11'
+        tox.env: py311-mode_mitogen-distro_ubuntu2204
 
       Ans_27_210:
         tox.env: py27-mode_ansible-ansible2.10

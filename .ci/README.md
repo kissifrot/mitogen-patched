@@ -20,7 +20,7 @@ here, just necessity.
 
 ### `ci_lib.run_batches()`
 
-There are some weird looking functions to extract more paralellism from the
+There are some weird looking functions to extract more parallelism from the
 build. The above function takes lists of strings, arranging for the strings in
 each list to run in order, but for the lists to run in parallel. That's great
 for doing `setup.py install` while pulling a Docker container, for example.
